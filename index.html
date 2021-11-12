@@ -25,86 +25,28 @@
                         <h1 class="logo__nombre no-margin centrar-text"><img src="/img/iconpage.png" class="icon_page"> Catering<span class="logo__bold"> María </span></h1>
                     </a>
                     <nav class="navegacion">
-                        <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
-                        <a href="cursos.html" class="navegacion__enlace">Nuestros servicios</a>
-                        <a href="#contactanos" class="navegacion__enlace">Contáctanos</a>
+                        <a class="navegacion__enlace">Nosotros</a>
+                        <a class="navegacion__enlace">Nuestros servicios</a>
                     </nav>
                 </div>
             </div>
             <div class="header__texto">
-                <h2 class="no-margin">La creatividad personalizada en ese día tan especial.<br>Confía en nosotros... 30 años nos avalan</h2>
+                <h2 class="no-margin">La creatividad personalizada en ese día tan especial.<br>Confía en nuestra experiencia</h2>
                 <p class="no-margin">Nos encagamos de cada detalle de su evento</p>
             </div>
+            <a href="#contactanos">
+                <div class="boton_contactanos">
+                    <h4>Contáctanos</h4>
+                </div>
+            </a>
         </head>
     </div>
     <!--CONTENIDO PRINCIPAL-->
     <div class="contenedor contenido-principal">
         <main class="blog">
-            <h3>Nuestro Blog</h3>
-            <article class="entrada">
-                <div class="entrada__imagen">
-                    <img src="img/blog1.jpg" alt="entrada1">
-                </div>
-                <div class="entrada__contenido">
-                    <h4 class="no-margin">Tipos de granos de cafe</h4>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Natus, quam! Est iure dicta officia reiciendis magnam 
-                        culpa natus assumenda dolorem totam error alias, omnis, 
-                        ducimus illo quisquam doloremque, similique odio.
-                    </p>
-                    <a href="entrada.html" class="boton boton--primario">Leer Entrada</a>
-                </div>
-            </article>
-            <article class="entrada">
-                <div class="entrada__imagen">
-                    <img src="img/blog2.jpg" alt="entrada1">
-                </div>
-                <div class="entrada__contenido">
-                    <h4 class="no-margin">3 Deliciosos recetas de cafe</h4>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Natus, quam! Est iure dicta officia reiciendis magnam 
-                        culpa natus assumenda dolorem totam error alias, omnis, 
-                        ducimus illo quisquam doloremque, similique odio.
-                    </p>
-                    <a href="entrada.html" class="boton boton--primario">Leer Entrada</a>
-                </div>
-            </article>
-            <article class="entrada">
-                <div class="entrada__imagen">
-                    <img src="img/blog3.jpg" alt="entrada1">
-                </div>
-                <div class="entrada__contenido">
-                    <h4 class="no-margin">Beneficios del cafe</h4>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Natus, quam! Est iure dicta officia reiciendis magnam 
-                        culpa natus assumenda dolorem totam error alias, omnis, 
-                        ducimus illo quisquam doloremque, similique odio.
-                    </p>
-                    <a href="entrada.html" class="boton boton--primario">Leer Entrada</a>
-                </div>
-            </article>
+
             
         </main>
-        <aside class="sidebar">
-            <h3>Nuestros cursos y talleres</h3>
-            <ul class="cursos no-padding">
-                <li class="widgest-curso">
-                    <h4 class="no-margin">Tecnica de eztraccion de cafe</h4>
-                    <p class="widgest-curso__label">Precio:<span class="widgest-curso__info">Gratis</span></p>
-                    <p class="widgest-curso__label">Cupos:<span class="widgest-curso__info">20</span></p>
-                    <a href="entrada.html" class="boton boton--secundario">Mas informacion</a>
-                </li>
-                <li class="widgest-curso">
-                    <h4 class="no-margin">4 Recetas de cafe para principiantes</h4>
-                    <p class="widgest-curso__label">Precio:<span class="widgest-curso__info">Gratis</span></p>
-                    <p class="widgest-curso__label">Cupos:<span class="widgest-curso__info">20</span></p>
-                    <a href="entrada.html" class="boton boton--secundario">Mas informacion</a>
-                </li>
-            </ul>
-        </aside>
     </div>
     <footer class="footer" id="contactanos">
         <div class="contenedor">
@@ -112,34 +54,30 @@
                 <a class="logo" href="index.html">
                     <h1 class="logo__nombre no-margin footer_titulo"><img src="/img/iconpage.png" class="icon_page"> Catering<span class="logo__bold"> María</span></h1>
                 </a>
-                <nav class="navegacion">
-                    <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
-                    <a href="cursos.html" class="navegacion__enlace">Nuestros servicios</a>
-                </nav>
             </div>
-            <div class="formulario">
-                <form class="contact-form" id="form">
-                    <label for="nombre" class="texto_blanco">Nombre</label><br />
-                    <input class="name" type="text" placeholder="nombre" id="nombre" /><br />
-                    <label for="email" class="texto_blanco">Email</label><br />
-                    <input class="email" type="email" placeholder="email" id="email" /><br />
-                    <label for="event" class="texto_blanco">Tipo de evento</label><br />
-                    <input class="event" type="text" placeholder="Tipo de evento" id="evento"/><br />
-                    <label for="date_event" class="texto_blanco">Fecha del evento</label><br />
-                    <input class="date_event" type="date" id="date_evento"/><br />
-                    <label for="invitados" class="texto_blanco">Cantidad de invitados</label><br />
-                    <input class="invitados" type="number" id="invitados" placeholder="Escriba la cantidad de invitados"/><br />
-                    <label for="message" class="texto_blanco">Mensaje</label><br />
-                    <textarea
-                      class="message"
-                      name=""
-                      id="message"
-                      placeholder="Escriba aqui su mensaje"
-                    ></textarea
-                    ><br />
-                    <button type="submit">Enviar</button>
-                  </form>
-            </div>
+        </div>
+        <div class="formulario">
+            <form class="contact-form" id="form">
+                <label for="nombre" class="texto_blanco">Nombre</label><br />
+                <input class="name" type="text" placeholder="nombre" id="nombre" /><br />
+                <label for="email" class="texto_blanco">Email</label><br />
+                <input class="email" type="email" placeholder="email" id="email" /><br />
+                <label for="event" class="texto_blanco">Tipo de evento</label><br />
+                <input class="event" type="text" placeholder="Tipo de evento" id="evento"/><br />
+                <label for="date_event" class="texto_blanco">Fecha del evento</label><br />
+                <input class="date_event" type="date" id="date_evento"/><br />
+                <label for="invitados" class="texto_blanco">Cantidad de invitados</label><br />
+                <input class="invitados" type="number" id="invitados" placeholder="Escriba la cantidad de invitados"/><br />
+                <label for="message" class="texto_blanco">Mensaje</label><br />
+                <textarea
+                  class="message"
+                  name=""
+                  id="message"
+                  placeholder="Escriba aqui su mensaje"
+                ></textarea
+                ><br />
+                <button type="submit">Enviar</button>
+              </form>
         </div>
     </footer>
     <!--CONEXION CON FIREBASE-->

@@ -19,6 +19,7 @@ body{
     font-family: var(--fuenteParrafo);
     font-size: 1.6rem;;
     line-height: 2;
+    background-color: black;
 }
 /**GENERAL**/
 .contenedor{
@@ -169,7 +170,7 @@ img{
 }
 
 .footer{
-    background-color: var(--negro);
+    background-color:black;
 
     padding-bottom: 3rem;
 }
@@ -360,4 +361,20 @@ img{
 
 .navegacion__enlace:hover{
     color: dodgerblue;
+}
+
+.boton_contactanos{
+    color: white;
+    background-color: #FFB718;
+    text-align: center;
+    border: black;
+    border-radius: 90px;
+    margin: 0 auto;
+    max-width: 200px;
+    padding: 1px auto;
+}
+
+.boton_contactanos:hover{
+    background-color:#ffe70a;
+    cursor: pointer;
 }
