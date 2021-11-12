@@ -13,7 +13,7 @@ firebase.initializeApp(config);
 
 document.querySelector(".contact-form").addEventListener("submit",submitForm);
 
-let contactInfo = firebase.database().ref("infos");
+let contactInfo = firebase.database().ref("Informacion de clientes");
 
 function submitForm(e){
     e.preventDefault();
@@ -33,9 +33,14 @@ function submitForm(e){
         typeof(date_event),
         typeof(invitados),
         typeof(message)
-        );
+    );
+    if(name==='' || email==='' || event==='' || 
+        date_event==='' || invitados==='' || message===''){
+            alert('Todos los campos son obligatorios',true);
+            return;
+    }
     saveContactInfo(name,email,event,date_event,invitados,message);
-    alert("los datos fueron enviados corrrectamente");
+    alert("Los datos fueron enviados corrrectamente");
     document.getElementById("form").reset();
     
 

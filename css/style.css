@@ -26,7 +26,7 @@ body{
     max-width: 120rem;
     width: 90%;
     margin: 0 auto;
-    padding-top: 2.5rem;
+    padding-top: 1rem;
 }
 a{
     text-decoration: none;
@@ -197,79 +197,7 @@ img{
     }
 }
 
-/**NUESTROS CURSOS**/
-.curso__titulo{
-    text-align: center;
-    margin-bottom: 6rem;
-}
-.bold{
-    font-weight: bold;
-    padding-left: 2rem;
-}
-.no-bold{
-    font-weight: normal;
-}
-.curso__contenido{
-    text-align: justify;
-}
 
-@media(min-width:768px){
-    .curso__grid{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        column-gap: 2rem;
-        margin-bottom: 2rem;
-    } 
-}
-
-.curso__grid{
-    border-bottom: 1px solid var(--gris);
-    margin-bottom: 2rem;
-}
-.curso__grid:last-of-type{
-    border: none;
-    margin-bottom: 0px;
-}
-
-/** CONTACTANOS**/
-
-.error {
-    background-color: rgb(105,0,0);
-    color: white;
-    text-align: center;
-    text-transform: uppercase;
-    padding: 1rem;
-}
-.correcto{
-    background-color: rgb(0, 95, 105);
-    color: white;
-    text-align: center;
-    text-transform: uppercase;
-    padding: 1rem;
-}
-.label{
-    font-size: 2rem;
-    font-family: var(--fuenteHeading);
-}
-.contactanos__forms{
-    display: grid;
-    row-gap: 1rem;
-    margin: -5rem auto 0 auto;
-    width: 95%;
-    padding: 5rem;
-    border:none
-}
-.pregunta{
-    display: flex;
-    margin-bottom: 2rem;
-}
-.label{
-    flex: 0 0 9rem;
-}
-.f__input{
-    flex: 1;
-    border-color: var(--gris);
-}
 
 .icon_page{
     width:50px;
@@ -285,8 +213,8 @@ img{
 }
 /*aqui inicia el codigo del formulario de contacto*/
 .contact-form {
-  margin: 35px auto 0px auto;
   width: 80%;
+  margin: auto 20px;
 }
 
 .contact-form label {
@@ -302,9 +230,9 @@ img{
   border-bottom: 2px solid #ccc;
   background: rgb(255, 255, 255);
   font-size: 18px;
-  border-radius: 3px;
+  border-radius: 40px;
   margin-bottom: 20px;
-  width: 100%;
+  width: 450px;
 }
 
 .contact-form input:focus {
@@ -318,8 +246,8 @@ img{
   border-bottom: 2px solid #ccc;
   background: rgb(255, 255, 255);
   font-size: 18px;
-  border-radius: 3px;
-  width: 100%;
+  border-radius: 40px;
+  width: 450px;
   font-family: inter;
   font-weight: normal;
 }
@@ -340,6 +268,8 @@ img{
   cursor: pointer;
   transition: 0.2s ease-in-out;
   border-bottom: 3px solid #1a883f;
+  background-color: #FFB718;
+  border-radius: 40px;
 }
 
 .contact-form button:hover {
@@ -377,4 +307,21 @@ img{
 .boton_contactanos:hover{
     background-color:#ffe70a;
     cursor: pointer;
+}
+
+.contact-wraper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.map{
+    margin: 40px 40px;
+}
+
+.info-contact{
+    color: white;
+    margin: auto 10%;
+}
+.bold{
+    font-weight: bold;
 }

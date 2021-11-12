@@ -49,35 +49,48 @@
         </main>
     </div>
     <footer class="footer" id="contactanos">
-        <div class="contenedor">
-            <div class="barra">
-                <a class="logo" href="index.html">
-                    <h1 class="logo__nombre no-margin footer_titulo"><img src="/img/iconpage.png" class="icon_page"> Catering<span class="logo__bold"> María</span></h1>
-                </a>
+        <div class="contact-wraper">
+            <div class="columna">
+                <div class="contenedor">
+                    <a class="logo" href="index.html">
+                        <h1 class="logo__nombre no-margin footer_titulo"><img src="/img/iconpage.png" class="icon_page"> Catering<span class="logo__bold"> María</span></h1>
+                    </a>
+                </div>
+                <div class="info-contact">
+                    <p><span class="bold">Informacion de contacto</span></p>
+                    <p><span class="bold">Celular:</span> 123456</p>
+                    <p><span class="bold">Correo electronico:</span> catering_maria@gmail.com</p>
+                    <p><span class="bold">Local:</span> Jr. Las Flores 789</p>
+                </div>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1964.6372255167353!2d-77.04800261528989!3d-12.11176233164564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c91b579824a3%3A0xb7c3a2d42e0b150e!2sMaria%20Panela!5e0!3m2!1ses!2spe!4v1636680706744!5m2!1ses!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
             </div>
-        </div>
-        <div class="formulario">
-            <form class="contact-form" id="form">
-                <label for="nombre" class="texto_blanco">Nombre</label><br />
-                <input class="name" type="text" placeholder="nombre" id="nombre" /><br />
-                <label for="email" class="texto_blanco">Email</label><br />
-                <input class="email" type="email" placeholder="email" id="email" /><br />
-                <label for="event" class="texto_blanco">Tipo de evento</label><br />
-                <input class="event" type="text" placeholder="Tipo de evento" id="evento"/><br />
-                <label for="date_event" class="texto_blanco">Fecha del evento</label><br />
-                <input class="date_event" type="date" id="date_evento"/><br />
-                <label for="invitados" class="texto_blanco">Cantidad de invitados</label><br />
-                <input class="invitados" type="number" id="invitados" placeholder="Escriba la cantidad de invitados"/><br />
-                <label for="message" class="texto_blanco">Mensaje</label><br />
-                <textarea
-                  class="message"
-                  name=""
-                  id="message"
-                  placeholder="Escriba aqui su mensaje"
-                ></textarea
-                ><br />
-                <button type="submit">Enviar</button>
-              </form>
+            <div class="columna" style="color: white;">
+                <div class="formulario">
+                    <form class="contact-form" id="form">
+                        <label for="nombre" class="texto_blanco">Nombre</label><br />
+                        <input class="name" type="text" placeholder="nombre" id="nombre" /><br />
+                        <label for="email" class="texto_blanco">Email</label><br />
+                        <input class="email" type="email" placeholder="email" id="email" /><br />
+                        <label for="event" class="texto_blanco">Tipo de evento</label><br />
+                        <input class="event" type="text" placeholder="Tipo de evento" id="evento"/><br />
+                        <label for="date_event" class="texto_blanco">Fecha del evento</label><br />
+                        <input class="date_event" type="date" id="date_evento"/><br />
+                        <label for="invitados" class="texto_blanco">Cantidad de invitados</label><br />
+                        <input class="invitados" type="number" id="invitados" placeholder="Escriba la cantidad de invitados"/><br />
+                        <label for="message" class="texto_blanco">Mensaje</label><br />
+                        <textarea
+                          class="message"
+                          name=""
+                          id="message"
+                          placeholder="Escriba aqui su mensaje"
+                        ></textarea
+                        ><br />
+                        <button type="submit">Enviar</button>
+                      </form>
+                </div>
+            </div>
         </div>
     </footer>
     <!--CONEXION CON FIREBASE-->
