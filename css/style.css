@@ -1,6 +1,7 @@
 :root{
     --fuenteHeading: 'PT Sans',sans-serif;
     --fuenteParrafo: 'Open Sans',sans-serif;
+    --fuenteTitulo: 'Shalimar';
 
     --primario: #784D3C;
     --blanco: #ffffff;
@@ -14,13 +15,14 @@ html {
   }
 *, *:before, *:after {
     box-sizing: inherit;
-  } 
+} 
+
 body{
     font-family: var(--fuenteParrafo);
     font-size: 1.6rem;;
     line-height: 2;
-    background-color: black;
 }
+
 /**GENERAL**/
 .contenedor{
     max-width: 120rem;
@@ -28,9 +30,11 @@ body{
     margin: 0 auto;
     padding-top: 1rem;
 }
+
 a{
     text-decoration: none;
 }
+
 h1,h2,h3{
     font-family: var(--fuenteHeading);
     line-height: 1;
@@ -61,19 +65,23 @@ img{
 .centrar-text{
     text-align: center;
 }
+
 /**HEADER**/
 .header{
     background-image: url(../img/banner1.jpg);
-    height: 68rem;
+    height: 60rem;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 }
-.header__texto{
+.header__texto h2{
     text-align: center;
     color: var(--blanco);
     margin-top: 5rem;
+    font-size: 7.2rem;
+    font-family: var(--fuenteTitulo);
 }
+
 @media(min-width:768px){
     .header__texto{
         margin-top: 15rem;
@@ -82,7 +90,7 @@ img{
 
 
 @media(min-width:768px){
-    .barra, .barra__footer{
+    .barra{
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -102,6 +110,7 @@ img{
     .navegacion{
         display: flex;
         gap: 2rem;
+        margin-left: 40rem;
     }
 }
 .navegacion__enlace{
@@ -110,7 +119,7 @@ img{
     font-size: 1.8rem;
     color: var(--blanco);
 }
-
+/*
 @media(min-width:768px){
     .contenido-principal{
         display: grid;
@@ -119,6 +128,7 @@ img{
     }
     
 }
+*/
 
 .entrada{
     border-bottom: 1px solid var(--gris);
@@ -171,9 +181,38 @@ img{
 
 .footer{
     background-color:black;
-
     padding-bottom: 3rem;
 }
+
+/*Sobre nosotros*/
+
+.sobre_nosotros{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sobre_nosotros--imagen,
+.sobre_nosotros--info{
+    flex-basis: calc(50% - 1rem);
+}
+
+.sobre_nosotros--info h3{
+    font-family: var(--fuenteTitulo);
+    display: flex;
+    justify-content: center;
+    font-size: 6rem;
+}
+
+.sobre_nosotros--info{
+    text-align: center;
+    font-size: 3.0rem;
+    font-weight: bold;
+    font-family: var(--fuenteTitulo);
+    text-anchor: middle;
+
+}
+
 
 /** NOSOTROS**/
 
@@ -211,9 +250,10 @@ img{
 .texto_blanco{
     color: white;
 }
+
 /*aqui inicia el codigo del formulario de contacto*/
 .contact-form {
-  width: 80%;
+  /*width: 80%;*/
   margin: auto 20px;
 }
 
