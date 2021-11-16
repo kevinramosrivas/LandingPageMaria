@@ -6,14 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>María Catering</title>
+    <link rel="preload" href="css/normalize.css">
+    <link rel="preload" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shalimar&display=swap" rel="stylesheet">
-    <link rel="preload" href="css/normalize.css">
-    <link rel="preload" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 
@@ -23,6 +23,7 @@
 <body>
 
     <header class="header">
+        
         <div class="contenedor">
             <div class="barra">
                 <a class="logo" href="index.html">
@@ -35,10 +36,12 @@
                 </nav>
             </div>
         </div>
+
         <div class="header__texto">
             <h2 class="no-margin">La creatividad personalizada en ese día tan especial.<br>Confía en nuestra experiencia
             </h2>
         </div>
+
         <a href="#contactanos">
             <div class="boton_contactanos">
                 <h4>Contáctanos</h4>
@@ -51,8 +54,10 @@
         <main class="informacion">
             
             <div class="sobre_nosotros">
-
-                <img class="sobre_nosotros--imagen" src="/img/nosotros_img.jpeg" alt="imagen_nosotros">
+                <div class="ayuda">
+                    <img class="sobre_nosotros--imagen" src="/img/nosotros_img.jpeg" alt="imagen_nosotros">
+                </div>
+                
                 <div class="sobre_nosotros--info">
                     <h3>Nosotros</h3>
                     <p>CATERING Maria es una empresa innovadora que
@@ -67,16 +72,25 @@
 
             <div class="servicios">
 
-                <section class="servicio">
-                        <img class="servicio--imagen" src="/img/criollo.jpeg" alt="buffet_criollo">        
+                <section class="servicio__criollo servicio--item">
+                        <!--<img class="servicio--imagen" src="/img/criollo.jpeg" alt="buffet_criollo">  --> 
+                        <div class="sombra">
+                            <p class="sombra__titulo">Buffet Criollo</p>
+                        </div>     
                 </section>
 
-                <section class=" servicio">
-                    <img class="servicio--imagen" src="/img/buffet_marino.jpeg" alt="buffet_marino">
+                <section class=" servicio__marino servicio--item">
+                   <!-- <img class="servicio--imagen" src="/img/buffet_marino.jpeg" alt="buffet_marino">  -->
+                   <div class="sombra">
+                         <p class="sombra__titulo">Buffe Marino</p>
+                   </div>  
                 </section>
 
-                <section class=" servicio">
-                    <img class="servicio--imagen" src="/img/inter.jpeg" alt="buffet_marino">
+                <section class=" servicio__internacional servicio--item">
+                    <!-- <img class="servicio--imagen" src="/img/inter.jpeg" alt="buffet_marino">  -->
+                    <div class="sombra">
+                        <p class="sombra__titulo">Buffet Internacional</p>
+                    </div>  
                 </section>
 
 
