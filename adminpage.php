@@ -1,3 +1,9 @@
+<?php
+    session_start();
+    if(!isset($_SESSION['datos admin'])){
+      header("Location: login.php");
+    }
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -38,6 +44,7 @@
               ?>
             </tbody>
           </table>
+          <a href = "src/cerrar_sesion.php">Cerrar Sesion</a>;
     </body>
 
 </html>
