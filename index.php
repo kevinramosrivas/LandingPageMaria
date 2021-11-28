@@ -27,7 +27,7 @@
         <div class="contenedor">
             <div class="barra">
                 <a class="logo" href="index.html">
-                    <h1 class="logo__nombre no-margin centrar-text"><img src="/img/iconpage.png" class="icon_page">
+                    <h1 class="logo__nombre no-margin centrar-text"><img src="img/iconpage.png" class="icon_page">
                         Catering<span class="logo__bold"> María </span></h1>
                 </a>
                 <nav class="navegacion">
@@ -55,7 +55,7 @@
             
             <div class="sobre_nosotros">
                 <div class="ayuda">
-                    <img class="sobre_nosotros--imagen" src="/img/nosotros_img.jpeg" alt="imagen_nosotros">
+                    <img class="sobre_nosotros--imagen" src="img/nosotros_img.jpeg" alt="imagen_nosotros">
                 </div>
                 
                 <div class="sobre_nosotros--info">
@@ -104,7 +104,7 @@
             <div class="columna">
                 <div class="contenedor">
                     <a class="logo" href="index.html">
-                        <h1 class="logo__nombre no-margin footer_titulo"><img src="/img/iconpage.png" class="icon_page">
+                        <h1 class="logo__nombre no-margin footer_titulo"><img src="img/iconpage.png" class="icon_page">
                             Catering<span class="logo__bold"> María</span></h1>
                     </a>
                 </div>
@@ -122,33 +122,27 @@
             </div>
             <div class="columna" style="color: white;">
                 <div class="formulario">
-                    <form class="contact-form" id="form">
+                    <form method="POST" class="contact-form" id="form" action="src/envio.php" novalidate="">
                         <label for="nombre" class="texto_blanco">Nombre</label><br />
-                        <input class="name" type="text" placeholder="nombre" id="nombre" /><br />
+                        <input class="name" type="text" placeholder="nombre" id="nombre" name="nombre"/><br />
                         <label for="email" class="texto_blanco">Email</label><br />
-                        <input class="email" type="email" placeholder="email" id="email" /><br />
+                        <input class="email" type="email" placeholder="email" id="email" name="email"/><br />
                         <label for="event" class="texto_blanco">Tipo de evento</label><br />
-                        <input class="event" type="text" placeholder="Tipo de evento" id="evento" /><br />
+                        <input class="event" type="text" placeholder="Tipo de evento" id="evento" name="evento"/><br />
                         <label for="date_event" class="texto_blanco">Fecha del evento</label><br />
-                        <input class="date_event" type="date" id="date_evento" /><br />
+                        <input class="date_event" type="date" id="date_evento" name="date_evento"/><br />
                         <label for="invitados" class="texto_blanco">Cantidad de invitados</label><br />
-                        <input class="invitados" type="number" id="invitados"
-                            placeholder="Escriba la cantidad de invitados" /><br />
+                        <input class="invitados" type="number" id="invitados" name="invitados" placeholder="Escriba la cantidad de invitados" /><br />
                         <label for="message" class="texto_blanco">Mensaje</label><br />
-                        <textarea class="message" name="" id="message"
-                            placeholder="Escriba aqui su mensaje"></textarea><br />
-                        <button type="submit">Enviar</button>
+                        <textarea class="message" id="mensaje" name="mensaje" placeholder="Escriba aqui su mensaje"></textarea><br />
+                        <button type="submit" id="btnIngresar">Enviar</button>
                     </form>
                 </div>
             </div>
         </div>
     </footer>
-
-    <!--CONEXION CON FIREBASE-->
-    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
-        
-    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-database.js"></script>
-    <script src="/js/app.js"></script>
+    <script src="js/app.js?v=<?php echo time(); ?>"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11?v=<?php echo time(); ?>"></script>
 </body>
 
 </html>
