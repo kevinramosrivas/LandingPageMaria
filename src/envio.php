@@ -12,9 +12,9 @@
     $mensaje = $_POST['mensaje'];
     echo '¡Hola ' . htmlspecialchars($_POST["nombre"]) . '!';
 
-    if($nombre !=='' || $email !=='' || $evento !=='' || $date_evento !=='' || $invitados !=='' || $mensaje !==''){
-        $sql= "INSERT INTO clientes (id,nombre,email,evento,date_evento,invitados,mensaje)
-        VALUES (0,'$nombre','$email','$evento','$date_evento','$invitados','$mensaje')";
+    if($nombre !=='' && $email !=='' && $evento !=='' && $date_evento !=='' && $invitados !=='' && $mensaje !==''){
+        $sql= "INSERT INTO clientes (nombre,email,evento,date_evento,invitados,mensaje)
+        VALUES ('$nombre','$email','$evento','$date_evento','$invitados','$mensaje')";
         mysqli_query($conexion,$sql);
         header("location: ../index.php");
     }
