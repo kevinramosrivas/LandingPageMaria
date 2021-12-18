@@ -8,15 +8,14 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="css/table.css" type="text/css">
     </head>
     <body>
+        <link rel="stylesheet" href="css/table2.css">
         <?php include("src/adminpagelogic.php")?>
         <button><a href = "src/cerrar_sesion.php">Cerrar Sesion</a></button>
-        <div style="overflow-x:auto;">
-          <table summary="Informacion de clientes">
-            <caption>Informacion de clientes</caption>
-            <thead>
+        <div class="table-responsive">
+          <table summary="Informacion de clientes" class="table table-hover table-bordered table-striped">
+            <thead class="thead-dark">
               <tr>
                 <th scope="col">Nombre</th>
                 <th scope="col">Email</th>
@@ -48,8 +47,11 @@
               ?>
             </tbody>
           </table>
-        </div>    
-          <script src="js/adminPage.js?v=<?php echo time(); ?>"></script>
+        </div>
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <!-- FontAwesome para iconos -->
+        <script src="https://kit.fontawesome.com/57888ec9eb.js?v=<?php echo time(); ?>" crossorigin="anonymous"></script>
     </body>
 
 </html>
