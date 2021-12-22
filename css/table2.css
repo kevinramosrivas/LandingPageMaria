@@ -1,0 +1,19 @@
+table {
+  text-align: center;
+}
+
+
+.idCliente {
+  display: none;
+}
+
+.eliminarButton{
+  background-color: #e43e3e;
+  color: white;
+  border: 2px solid #e43e3e;
+  border-radius: 6px;
+}
+
+.eliminarButton:hover{
+  box-shadow: gray;
+}
