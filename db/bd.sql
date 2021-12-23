@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 28-11-2021 a las 01:49:06
+-- Tiempo de generación: 23-12-2021 a las 02:15:01
 -- Versión del servidor: 10.4.22-MariaDB
 -- Versión de PHP: 8.0.13
 
@@ -53,7 +53,8 @@ CREATE TABLE `clientes` (
   `date_evento` varchar(100) NOT NULL,
   `invitados` varchar(100) NOT NULL,
   `mensaje` varchar(100) NOT NULL,
-  `id` int(10) NOT NULL
+  `id` int(10) NOT NULL,
+  `Estado` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -86,7 +87,7 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT de la tabla `clientes`
 --
 ALTER TABLE `clientes`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
