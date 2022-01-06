@@ -20,9 +20,11 @@
         $destino = $arregloDatos['email'];
         $asunto = "Confirmacion de servicio.- Cattering";
         $mensaje = "Estimado " . $arregloDatos['nombre'] . " hemos recibido su solicitud de servicio para el evento de " . $arregloDatos['evento'] . " con un total de " .
-        $arregloDatos['invitados'] . "invitados,ha realizarse en la fecha " . $arregloDatos['date_evento'] . ".En breve un trabajador se comunicara con usted";;
-
-        mail($destino,$asunto,$mensaje);
+        $arregloDatos['invitados'] . " invitados,ha realizarse en la fecha " . $arregloDatos['date_evento'] . ".En breve un trabajador se comunicara con usted";;
+        $micorreo = "From:cattering.maria@gmail.com";
+        
+        mail($destino,$asunto,$mensaje,$micorreo);
+        
     }
 
     header("location: ../adminpage.php");
